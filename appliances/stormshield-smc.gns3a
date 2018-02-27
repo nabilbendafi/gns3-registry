@@ -1,0 +1,48 @@
+{
+    "name": "Stormshield Management Center",
+    "category": "guest",
+    "description": "With Stormshield Management Center, set up a topology of secure interconnections between several hundred sites in a matter of minutes. Define security rules that apply to similar sets of appliances only once so that you can concentrate on rules that cater to the specific characteristics of each site.",
+    "vendor_name": "Stormshield",
+    "vendor_url": "https://www.stormshield.com",
+    "product_name": "Stormshield Management Center",
+    "product_url": "https://www.stormshield.com/products/management-center",
+    "documentation_url": "https://mystormshield.eu/ecm/ui/download-document?id=dffafdf5-a385-4120-8c0e-87ee1d3750cb&lang=en",
+    "registry_version": 5,
+    "status": "stable",
+    "maintainer": "Nabil BENDAFI",
+    "maintainer_email": "nabil.bendafi@stormshield.eu",
+    "usage": "Interface eth0 is set to DHCP and can be configured during boot time\\nKeyboard and time can be configured as well\\nLicense is needed for managing SNS firewalls",
+    "availability": "with-registration",
+    "symbol": "stormdhield-smc.png",
+    "images": [
+        {
+            "filename": "smc-2.2.2.ova",
+            "version": "2.2.2",
+            "md5sum": "8f69e766bb45f74cd40ac1fbe5179d21",
+            "filesize": 174141440,
+            "download_url": "https://mystormshield.eu/",
+            "direct_download_url": "http://data.stormshield.eu/data2/smc/2.2.2/smc-2.2.2.ova"
+            "compression": "tar"
+        }
+    ],
+    "versions": [
+        {
+            "name": "2.2.2"
+            "images": {
+                "hdb_disk_image": "svc-system.vmdk",
+                "hda_disk_image": "product-data.vmdk"
+            }
+        }
+    ],
+   "qemu": {
+        "adapter_type": "e1000",
+        "adapters": 1,
+        "cpus": 2,
+        "ram": 1024,
+        "arch": "x86_64",
+        "hda_disk_interface": "ide",
+        "hdb_disk_interface": "ide",
+        "console_type": "telnet",
+        "kvm": "allow"
+    }
+}
